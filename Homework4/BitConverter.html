@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Bit Converter</title>
+  </head>
+  <body>
+      <div id = "converter">
+           <h1>Bit Converter</h1>
+    <p>
+        <p> 1. Enter the number of bits/bytes/kilobytes.<p>
+        <input type="text" id="bit" />
+        <p>2. Select a conversion. </p>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                Conversion Types
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <input type="button" class="btn btn-default" id="bits_to_bytes" value="Bits to Bytes" />
+                <input type="button" class="btn btn-default" id="bits_to_kilobytes" value="Bits to Kilobytes" />
+                <input type="button" class="btn btn-default" id="bytes_to_bits" value="Bytes to Bits" />
+                <input type="button" class="btn btn-default" id="bytes_to_kilobytes" value="Bytes to Kilobytes" />
+                <input type="button" class="btn btn-default" id="kilobytes_to_bytes" value="Kilobytes to Bytes" />
+                <input type="button" class="btn btn-default" id="kilobytes_to_bits" value="Kilobytes to Bits" />
+            </ul>
+      </div>
+    </p>
+    <p id="result"></p>
+        </div>
+   
+    <script src="bits.js"></script>
+    <link href="bits.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fr" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
